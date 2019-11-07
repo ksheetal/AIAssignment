@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private RecyclerView recyclerView;
+    private TextView textView;
 
 
     private String mCurrentUserId;
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         mRootRef = FirebaseDatabase.getInstance().getReference();
         mInputMessageView = findViewById(R.id.chatText);
        // userName = findViewById(R.id.textView8);
+        textView = findViewById(R.id.textView8);
 
 
         mAdapter = new Adapter(mMessagesList);
@@ -75,6 +79,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         loadmessages();
+
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,AIActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
