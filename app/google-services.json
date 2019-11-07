@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620012595512",
+    "firebase_url": "https://aiassignment-ea50a.firebaseio.com",
+    "project_id": "aiassignment-ea50a",
+    "storage_bucket": "aiassignment-ea50a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620012595512:android:95e46e3886ce3636ecf9cd",
+        "android_client_info": {
+          "package_name": "com.example.aiassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620012595512-tavpvjj4jsie30g2iag4on5kakdqpfdg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aiassignment",
+            "certificate_hash": "2ee1587bfe5f31952b3bdaf6faf8c1eb7b434147"
+          }
+        },
+        {
+          "client_id": "620012595512-o8dacnmi91dvmk04rgem5nchtkk9d44v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYtK22xu0ATHgM8kvxW1bUZk6VkB3QHtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620012595512-o8dacnmi91dvmk04rgem5nchtkk9d44v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
