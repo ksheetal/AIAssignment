@@ -40,7 +40,7 @@ public class AIActivity extends AppCompatActivity implements AIListener {
 
             makeRequest();
         }
-        final AIConfiguration config = new AIConfiguration("6a9f4aeb747648e49bc7aa676545c517",
+        final AIConfiguration config = new AIConfiguration("###",
                 AIConfiguration.SupportedLanguages.English,
                 AIConfiguration.RecognitionEngine.System);
         aiService = AIService.getService(this, config);
